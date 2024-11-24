@@ -39,9 +39,14 @@ std::vector<device*> device::allDevices;
 
 int main()
 {
-	device device_a;
-	device_a.initialize(5,5);
-	std::vector<device*> returnedValues = device_a.check_location(4,4,1);
+	device* devices = new device[10];
+	for (int i = 0; i < 10; i ++)
+	{
+		devices[i] = device();
+		devices[i].initialize(i,i);
+	}
+	
+	std::vector<device*> returnedValues = devices[0].check_location(4,4,1);
 	for (device* element : returnedValues)
 	{
 		std::cout<<element->location_y;
