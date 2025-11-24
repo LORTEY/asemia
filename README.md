@@ -6,3 +6,4 @@ decided to learn rust.
 will start working on it soon as soon as I read about how other similar networks deal with some problems.
 I will beat meshtastic.
 Soon to restart...
+not likely kinda too ambitious
